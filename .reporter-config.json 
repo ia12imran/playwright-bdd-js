@@ -1,0 +1,27 @@
+{
+  "jsonDir": "reports/json",
+  "reportPath": "reports/html",
+  "metadata": {
+    "browser": {
+      "name": "chromium",
+      "version": "latest"
+    },
+    "device": "Local Test Machine",
+    "platform": {
+      "name": "Linux",
+      "version": "latest"
+    }
+  },
+  "customData": {
+    "title": "Test Execution Report",
+    "data": [
+      { "label": "Project", "value": "Playwright Cucumber BDD" },
+      { "label": "Environment", "value": "dev" }
+    ]
+  },
+  "displayDuration": true,
+  "durationInMS": true,
+  "pageTitle": "Test Automation Report",
+  "reportName": "Playwright Cucumber Test Report",
+  "openReportInBrowser": true
+}
