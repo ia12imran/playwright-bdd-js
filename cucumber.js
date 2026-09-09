@@ -5,11 +5,13 @@ module.exports = {
     require: ["src/step-definitions/**/*.js", "support/**/*.js"],
     format: [
       "progress-bar",
+      "allure-cucumberjs/reporter",
       "json:reports/json/cucumber-report.json",
       "html:reports/html/cucumber-report.html",
     ],
     formatOptions: {
       snippetInterface: "async-await",
+      resultsDir: "reports/allure-results",
     },
     paths: ["src/features/**/*.feature"],
     parallel: parseInt(process.env.PARALLEL_WORKERS) || 4,
