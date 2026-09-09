@@ -1,4 +1,4 @@
-Feature: Here we will creaet user as class level eight in careers360
+Feature: Here we will creaet user as class level eight in careers360.
    
     Background: 
     Given I am on the registration page for user class eight
