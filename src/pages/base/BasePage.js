@@ -1,4 +1,3 @@
-const { expect } = require("chai");
 const { Logger } = require("../../utilities/logger/Logger");
 
 class BasePage {

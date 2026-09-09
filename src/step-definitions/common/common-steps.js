@@ -1,4 +1,4 @@
-const { Given, When, Then } = require("@cucumber/cucumber");
+const { Given, Then } = require("@cucumber/cucumber");
 const { expect } = require("chai");
 
 Given("I navigate to the careers360 website", async function () {
@@ -6,7 +6,7 @@ Given("I navigate to the careers360 website", async function () {
   console.log(`🌐 Navigating to: ${url}`);
 
   if (this.page) {
-    await this.page.goto(url, { waitUntil: "networkidle" });
+    await this.page.goto(url, { waitUntil: "domcontentloaded" });
     console.log("✅ Navigation successful");
   } else {
     console.log("⚠️ Page not initialized");

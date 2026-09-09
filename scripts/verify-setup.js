@@ -1,5 +1,4 @@
 const fs = require('fs-extra');
-const path = require('path');
 
 async function verifySetup() {
   console.log('🔍 Verifying Project Setup...\n');

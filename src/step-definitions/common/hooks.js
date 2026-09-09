@@ -13,8 +13,6 @@ const { Logger } = require("../../utilities/logger/Logger");
 const logger = Logger.getInstance();
 setDefaultTimeout(60000);
 
-let browserInstance = null;
-
 BeforeAll(async function () {
   logger.info("🏁 Starting test execution...");
   logger.info(`📱 Environment: ${process.env.NODE_ENV || "dev"}`);
@@ -47,7 +45,7 @@ Before(async function () {
 
   const browserType = process.env.BROWSER || "chromium";
   const headless = process.env.HEADLESS === "true";
-  const slowMo = parseInt(process.env.SLOW_MO) || 500;
+  const slowMo = parseInt(process.env.SLOW_MO) || 100;
 
   logger.info(`🎮 Launching browser: ${browserType} (headless: ${headless})`);
 

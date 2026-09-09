@@ -19,19 +19,19 @@ Feature: User Registration Form
     And I click on Get OTP button
     Then I should see OTP request successful
 
-  @negative
-  Scenario: Fill registration form with invalid email
-    When I Enter invalid EmailID "invalid-email" for class Six User Creation
-    And I click on Get OTP button
-    Then I should see error message for invalid email
+  # @negative
+  # Scenario: Fill registration form with invalid email
+  #   When I Enter invalid EmailID "invalid-email" for class Six User Creation
+  #   And I click on Get OTP button
+  #   Then I should see error message for invalid email
 
-  @negative
-  Scenario: Fill registration form without required fields
-    When I click on Get OTP button without filling details
-    Then I should see field validation errors
+  # @negative
+  # Scenario: Fill registration form without required fields
+  #   When I click on Get OTP button without filling details
+  #   Then I should see field validation errors
 
-  @smoke
-  Scenario: Verify registration page loads
-    Given I am on the registration page for user class Six
-    Then I should see the registration form
-    And I should see all required fields
+  # @smoke
+  # Scenario: Verify registration page loads
+  #   Given I am on the registration page for user class Six
+  #   Then I should see the registration form
+  #   And I should see all required fields

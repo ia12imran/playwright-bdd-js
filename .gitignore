@@ -1,5 +1,4 @@
 node_modules/
-package-lock.json
 reports/
 screenshots/
 videos/
@@ -7,6 +6,9 @@ test-results/
 logs/
 *.log
 .DS_Store
+.env
 .env.local
 .vscode/
 .idea/
+allure-results/
+allure-report/
