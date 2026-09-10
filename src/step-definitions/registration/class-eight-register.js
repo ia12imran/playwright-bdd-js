@@ -23,3 +23,6 @@ When("I Enter Mobile Number for class Eight User Creation", async function () {
 When("I click on Studying In Dropdown as Select Class Eight", async function () {
   await this.Rgstry_lvl_dta.selectClassEight();
 });
+Then("I click School Board Dropdown as Select Value",async function(){
+ await this.Rgstry_lvl_dta.selectSchoolBoardasrandomValue();
+})

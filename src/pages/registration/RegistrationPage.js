@@ -125,7 +125,7 @@ class RegistrationPage extends BasePage {
     await this.page.waitForTimeout(500);
 
     // Click on specific board option
-    const boardOption = `//div[contains(text(), '${boardName}')]`;
+    const boardOption = `//div[@role='option' and contains(string(), '${boardName}')]`;
     await this.page.waitForSelector(boardOption, { timeout: 12000 });
     await this.page.click(boardOption);
 
@@ -147,11 +147,12 @@ class RegistrationPage extends BasePage {
 
     await this.page.waitForTimeout(1000);
 
-    // Click on "My current location"
-    await this.page.waitForSelector(this.locators.current_location, {
+    // Select the first suggested city from the dropdown
+    await this.page.waitForSelector(".location_dropdown .option", {
       timeout: 12000,
     });
-    await this.page.click(this.locators.current_location);
+    await this.page.click(".location_dropdown .option");
+    await this.page.waitForTimeout(500);
 
     this.logger.info("✅ Location selected");
   }

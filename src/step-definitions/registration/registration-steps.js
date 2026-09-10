@@ -59,8 +59,8 @@ When(
   },
 );
 
-When("I click on Location as Select {string}", async function () {
-  logger.info("📍 Selecting location");
+When("I click on Location as Select {string}", async function (locationText) {
+  logger.info(`📍 Selecting location: ${locationText}`);
   await this.registrationPage.selectLocation();
 });
 
