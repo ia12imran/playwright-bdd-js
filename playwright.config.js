@@ -1,6 +1,7 @@
 const { defineConfig, devices } = require("@playwright/test");
 require("dotenv").config();
 
+
 module.exports = defineConfig({
   testDir: "./src/features",
   fullyParallel: false,

@@ -3,7 +3,7 @@ const fs = require('fs-extra');
 async function verifySetup() {
   console.log('🔍 Verifying Project Setup...\n');
   
-  // Check directory structure
+  // Check directory structure....
   const requiredDirs = [
     'src/pages/base',
     'src/pages/registration',

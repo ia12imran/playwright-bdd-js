@@ -2,6 +2,7 @@ const fs = require('fs-extra');
 
 async function setupProject() {
   console.log('🚀 Setting up project...\n');
+
   
   const dirs = [
     'src/pages/base',

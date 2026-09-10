@@ -6,7 +6,7 @@
       "name": "chromium",
       "version": "latest"
     },
-    "device": "Local Test Machine",
+    "device": "Local Test Machine Ubuntu 26",
     "platform": {
       "name": "Linux",
       "version": "latest"

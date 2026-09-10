@@ -2,6 +2,7 @@
 const fs = require('fs-extra');
 const path = require('path');
 
+
 async function generateProfessionalReport() {
   console.log('📊 Generating Professional HTML Report...');
 
