@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="docs/images/playwright-logo.svg" alt="Playwright Logo" width="128" />
+
 # Playwright BDD (JavaScript)
 
 **Behavior-Driven End-to-End Test Automation Framework**
@@ -378,6 +380,8 @@ A custom, self-contained Chart.js dashboard (charts + searchable feature/scenari
 npm run report:professional
 npm run report:open        # opens reports/html/index.html
 ```
+
+![Playwright BDD Professional Report Dashboard](docs/images/report-dashboard.png)
 
 ### Additional Artifacts
 
